@@ -1,0 +1,26 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+    float a,b,c,d,x;
+    cout << "enter a:";
+    cin >> a;
+    cout << "enter b:";
+    cin >> b;
+    cout << "enter c:";
+    cin >> c;
+    d=b*b-4*a*c;
+    x=(sqrt(d))/2*a;
+    if (a==0)
+        cout << "daraje 2 nist!" <<endl;
+    else if (d==0)
+        cout << "rishe mozaaf:x=" << -b/(2*a) << endl;
+    else
+        cout << "x1=" << (-b+sqrt(d))/(2*a) <<endl;
+        cout << "x2=" << (-b-sqrt(d))/(2*a) <<endl;
+
+    return 0;
+}
